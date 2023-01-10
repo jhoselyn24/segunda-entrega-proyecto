@@ -1,0 +1,23 @@
+<div class="navbar">
+    <a href="">
+        Lista Estudiantes
+    </a>
+    <mat-sidenav-container>
+    <mat-sidenav>Start</mat-sidenav>
+    <mat-sidenav-content>Main</mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+  
+       
+        <a routerLink="/alumnos">Alumnos</a>
+        <h1>{{title}}</h1>
+
+        <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+  
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
