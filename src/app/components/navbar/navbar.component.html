@@ -1,23 +1,19 @@
-<div class="navbar">
-    <a href="">
-        Lista Estudiantes
-    </a>
-    <mat-sidenav-container>
-    <mat-sidenav>Start</mat-sidenav>
-    <mat-sidenav-content>Main</mat-sidenav-content>
-  </mat-sidenav-container>
-</div>
-<mat-sidenav-container>
-    <mat-sidenav #sidenav>
-      <mat-nav-list>
-  
-       
-        <a routerLink="/alumnos">Alumnos</a>
-        <h1>{{title}}</h1>
 
-        <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
-  
-      </mat-nav-list>
-    </mat-sidenav>
-  </mat-sidenav-container>
+<mat-drawer-container class="example-container navbar">
+  <mat-drawer mode="side" opened>
+    <ul>
+      <li>
+        <a routerLink="list-students">Alumnos</a>
+      </li>
+      <li>
+        <a routerLink="add-students">Agregar/Editar/Eliminar</a>
+      </li>
+      <li>
+        <a routerLink="courses">Cursos</a>
+      </li>
+      
+    </ul>
+  </mat-drawer>
+</mat-drawer-container>
+
 

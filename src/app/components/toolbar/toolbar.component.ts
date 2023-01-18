@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -6,11 +6,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss']
 })
-export class ToolbarComponent implements OnInit {
+export class ToolbarComponent {
 
-  constructor() { }
+  @Output() toggleSidebar = new EventEmitter()
 
-  ngOnInit(): void {
-  }
 
 }
